@@ -10,18 +10,21 @@
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="vendors/linericon/style.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
         <link rel="stylesheet" href="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css">
         <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
         <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
         <!-- main css -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
+        <!-- font-awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
     </head>
     <body>
         <!--================Header Area =================-->
-        <header class="header_area">
+        <header>
             <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light">
+                <nav class="navbar navbar-expand-lg fixed-top">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <a class="navbar-brand logo_h" href="index.html"><img src="image/Logo.png" alt=""></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,19 +35,13 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> 
-                            <li class="nav-item active"><a class="nav-link" href="about.html">About us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="accomodation.html">Accomodation</a></li>
-                            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                            <li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="blog-single.html">Blog Details</a></li>
-                                </ul>
-                            </li> 
-                            <li class="nav-item"><a class="nav-link" href="elements.html">Elemests</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="index.php">Home</a></li> 
+                            <li class="nav-item"><a class="nav-link" href="about.php">About us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="rooms.php">Accomodation</a></li>
+                            <li class="nav-item"><a class="nav-link" href="gallery.php">Gallery</a></li>
+                            <li class="nav-item"><a class="nav-link" href="elements.php">Elemests</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="admin/index.php"> <i class="fas fa-user-shield fa-2x mr-1"></i>Admin Panale</a></li>
                         </ul>
                     </div> 
                 </nav>
@@ -52,39 +49,74 @@
         </header>
         <!--================Header Area =================-->
         
-        <!--================Breadcrumb Area =================-->
-        <section class="breadcrumb_area">
-            <div class="overlay bg-parallax" data-stellar-ratio="0.8" data-stellar-vertical-offset="0" data-background=""></div>
-            <div class="container">
-                <div class="page-cover text-center">
-                    <h2 class="page-cover-tittle">About Us</h2>
-                    <ol class="breadcrumb">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="active">About</li>
-                    </ol>
-                </div>
+        <!--================Banner Area =================-->
+        <section class="banner_area">
+            <div class="booking_table d_flex align-items-center">
+            	<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+				<div class="container">
+					<div class="banner_content text-center">
+						<h6>Are you boared with your working life???</h6>
+						<h2>Welcome to Our Recidence</h2>
+						<p>It is far from main town and fully calm and quite. You can enjoy youself with nature.</p>
+						<a href="rooms.php" class="btn theme_btn button_hover">Book Your Room</a>
+					</div>
+				</div>
             </div>
         </section>
-        <!--================Breadcrumb Area =================-->
+        <!--================Banner Area =================-->
         
-        <!--================ About History Area  =================-->
-        <section class="about_history_area section_gap">
+        <!--================ Accomodation Area  =================-->
+        <section class="accomodation_area section_gap">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6 d_flex align-items-center">
-                        <div class="about_content ">
-                            <h2 class="title title_color">About Us <br>Our History<br>Mission & Vision</h2>
-                            <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
-                            <a href="#" class="button_hover theme_btn_two">Request Custom Price</a>
+                <div class="section_title text-center">
+                    <h2 class="title_color">Hotel Accomodation</h2>
+                    <p>We all live in an age that belongs to the young at heart. Life that is becoming extremely fast, </p>
+                </div>
+                <div class="row mb_30">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="accomodation_item text-center">
+                            <div class="hotel_img">
+                                <img src="image/room1.jpg" alt="">
+                                <a href="#" class="btn theme_btn button_hover">Book Now</a>
+                            </div>
+                            <a href="#"><h4 class="sec_h4">Double AC Room</h4></a>
+                            <h5>$11<small>/night</small></h5>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <img class="img-fluid" src="image/about_bg.jpg" alt="img">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="accomodation_item text-center">
+                            <div class="hotel_img">
+                                <img src="image/room2.jpg" alt="">
+                                <a href="#" class="btn theme_btn button_hover">Book Now</a>
+                            </div>
+                            <a href="#"><h4 class="sec_h4">Single AC Room</h4></a>
+                            <h5>$7<small>/night</small></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="accomodation_item text-center">
+                            <div class="hotel_img">
+                                <img src="image/room3.jpg" alt="">
+                                <a href="#" class="btn theme_btn button_hover">Book Now</a>
+                            </div>
+                            <a href="#"><h4 class="sec_h4">Single Non-AC Room</h4></a>
+                            <h5>$5<small>/night</small></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="accomodation_item text-center">
+                            <div class="hotel_img">
+                                <img src="image/room4.jpg" alt="">
+                                <a href="#" class="btn theme_btn button_hover">Book Now</a>
+                            </div>
+                            <a href="#"><h4 class="sec_h4">Double Non-AC Room</h4></a>
+                            <h5>$8<small>/night</small></h5>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--================ About History Area  =================-->
+        <!--================ Accomodation Area  =================-->
         
         <!--================ Facilities Area  =================-->
         <section class="facilities_area section_gap">
@@ -136,6 +168,25 @@
             </div>
         </section>
         <!--================ Facilities Area  =================-->
+        
+        <!--================ About History Area  =================-->
+        <section class="about_history_area section_gap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 d_flex align-items-center">
+                        <div class="about_content ">
+                            <h2 class="title title_color">About Us <br>Our History<br>Mission & Vision</h2>
+                            <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
+                            <a href="#" class="button_hover theme_btn_two">Request Custom Price</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="image/about_bg.jpg" alt="img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================ About History Area  =================-->
         
         <!--================ Testimonial Area  =================-->
         <section class="testimonial_area section_gap">
@@ -206,6 +257,67 @@
         </section>
         <!--================ Testimonial Area  =================-->
         
+        <!--================ Latest Blog Area  =================-->
+        <section class="latest_blog_area section_gap">
+            <div class="container">
+                <div class="section_title text-center">
+                    <h2 class="title_color">latest posts from blog</h2>
+                    <p>The French Revolution constituted for the conscience of the dominant aristocratic class a fall from </p>
+                </div>
+                <div class="row mb_30">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-recent-blog-post">
+                            <div class="thumb">
+                                <img class="img-fluid" src="image/blog/blog-1.jpg" alt="post">
+                            </div>
+                            <div class="details">
+                                <div class="tags">
+                                    <a href="#" class="button_hover tag_btn">Travel</a>
+                                    <a href="#" class="button_hover tag_btn">Life Style</a>
+                                </div>
+                                <a href="#"><h4 class="sec_h4">Low Cost Advertising</h4></a>
+                                <p>Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.</p>
+                                <h6 class="date title_color">31st January,2018</h6>
+                            </div>	
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-recent-blog-post">
+                            <div class="thumb">
+                                <img class="img-fluid" src="image/blog/blog-2.jpg" alt="post">
+                            </div>
+                            <div class="details">
+                                <div class="tags">
+                                    <a href="#" class="button_hover tag_btn">Travel</a>
+                                    <a href="#" class="button_hover tag_btn">Life Style</a>
+                                </div>
+                                <a href="#"><h4 class="sec_h4">Creative Outdoor Ads</h4></a>
+                                <p>Self-doubt and fear interfere with our ability to achieve or set goals. Self-doubt and fear are</p>
+                                <h6 class="date title_color">31st January,2018</h6>
+                            </div>	
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-recent-blog-post">
+                            <div class="thumb">
+                                <img class="img-fluid" src="image/blog/blog-3.jpg" alt="post">
+                            </div>
+                            <div class="details">
+                                <div class="tags">
+                                    <a href="#" class="button_hover tag_btn">Travel</a>
+                                    <a href="#" class="button_hover tag_btn">Life Style</a>
+                                </div>
+                                <a href="#"><h4 class="sec_h4">It S Classified How To Utilize Free</h4></a>
+                                <p>Why do you want to motivate yourself? Actually, just answering that question fully can </p>
+                                <h6 class="date title_color">31st January,2018</h6>
+                            </div>	
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================ Recent Area  =================-->
+        
         <!--================ start footer Area  =================-->	
         <footer class="footer-area section_gap">
             <div class="container">
@@ -273,7 +385,7 @@
                 <div class="border_line"></div>
                 <div class="row footer-bottom d-flex justify-content-between align-items-center">
                     <p class="col-lg-8 col-sm-12 footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://www.facebook.com/avilashsaha.akash" target="_blank">Avilash Saha</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                     <div class="col-lg-4 col-sm-12 footer-social">
                         <a href="#"><i class="fa fa-facebook"></i></a>
@@ -294,6 +406,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="js/bootstrap.min.js"></script>
         <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
         <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="js/mail-script.js"></script>
         <script src="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.js"></script>
         <script src="vendors/nice-select/js/jquery.nice-select.js"></script>
         <script src="js/mail-script.js"></script>
